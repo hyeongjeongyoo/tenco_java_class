@@ -1,4 +1,4 @@
-package basic_ch01;
+package basic.ch01;
 
 public class DataType1 {
 

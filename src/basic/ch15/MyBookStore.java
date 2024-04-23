@@ -3,7 +3,8 @@ package basic.ch15;
 import java.util.Scanner;
 
 /**
- * author - 유형정 모든 프로그래밍의 기본은 C R U D 이다.
+ * author - 유형정
+ * 모든 프로그래밍의 기본은 C R U D 이다.
  */
 public class MyBookStore {
 

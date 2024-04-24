@@ -8,9 +8,9 @@ public class A {
 	int height;
 	int weight;
 	int age;
-	
+
 	// 바로 수정하게 된다면 잘 돌아가는지 테스트를 해야 됨 + 일 추가
-	
+
 }
 
 // 단, 하나의 자바 파일 안에 여러개의 클래스를 작성할 수 있다.
@@ -23,16 +23,16 @@ class B {
 	int height;
 	int weight;
 	int age;
-	
+
 	int level;
 	String nickNAme;
 }
 
 // 상속이라는 문법을 배운 개발자라면
-class C extends A{
-	
+class C extends A {
+
 	int level;
 	int nickName;
 	String phone;
-	
+
 }

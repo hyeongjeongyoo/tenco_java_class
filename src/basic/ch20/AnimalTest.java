@@ -1,0 +1,30 @@
+package basic.ch20;
+
+public class AnimalTest {
+
+	public static void main(String[] args) {
+		
+		Animal animal = new Animal();
+		animal.move();
+		animal.eating();
+		System.out.println("-----------------------");
+		
+		Animal 주소2 = new Tiger();
+		주소2.move();
+		주소2.eating();
+		System.out.println("-----------------------");
+		
+		Animal 주소3 = new Human();
+		주소3.move();
+		주소3.eating();
+		System.out.println("-----------------------");
+		
+		// 컴파일 시점에는 문자에 대한 것만 실행을 하고 런하면 해당하는 객체가 들어감
+		//
+		//  강제형변환 다운캐스팅
+		int n1 = (int)10.5;
+		((Human)주소3).readBooks();
+		
+	}// end of main
+	
+}// end of class

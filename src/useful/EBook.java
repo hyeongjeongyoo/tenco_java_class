@@ -33,6 +33,7 @@ public class EBook {
 		return false;
 	}
 
+	
 	public static void main(String[] args) {
 
 		EBook book1 = new EBook(1, "홍길동전", "허균");
@@ -44,6 +45,7 @@ public class EBook {
 		boolean result2 = book1.equals(book2);
 		System.out.println("result2 : " + result2);
 		
-	}
+	}// end of main
 
+	
 }

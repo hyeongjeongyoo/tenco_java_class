@@ -13,6 +13,4 @@ public class Student implements Romeo{
 		System.out.println("학교 축제에서 " + name + "이 연극을 합니다." );
 	}
 	
-	
-
 }

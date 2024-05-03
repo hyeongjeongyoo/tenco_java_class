@@ -116,21 +116,20 @@ public class TencoIntArray {
 	// 지정한 인덱스 번호의 요소를 삭제하기
 	public void removeElement(int position) {
 		// 방어적 코드
-		if(isEmpty()) {
+		if (isEmpty()) {
 			System.out.println("삭제할 요소가 없습니다.");
 		}
-		
+		// position : 2 <- 넘겨 받은 값
+		System.out.println("Log 2 : " + count);
+
 		// 인덱스 범위를 잘못 지정했다면 방어적 코드
-		if(position < 0 || position >= count) {
+		if (position < 0 || position >= count) {
 			System.out.println("잘못된 요청입니다.");
 		}
-		
-		// intArr[position];	-> 사용자가 요청한 인덱스 번호는 0번이라고 가정.
-		// [100] [200] [300] [400]
-		// [200] [300] [400] []
-		for (int i = position; i < count - 1; i++) {
-			// 0   0
-			// 0 + 1
+
+		//   0     1     2
+		// [100] [200] [300]
+		for (int i = position; i < count; i++) {
 			intArr[i] = intArr[i + 1];
 		}
 		count--;

@@ -6,21 +6,19 @@ public class MyThread2MainTest {
 	public static void main(String[] args) {
 
 		System.out.println("main start");
-		
+
 		// 문제 MyThread2를 메모리에 올리고
 		// 그 안에 정의된 run() 메서드를 호출 하시오.
 		// 힌트 -> Thread 문서를 반드시 확인 하시오.
-		
+
 		MyThread2 myThread2 = new MyThread2();
-		//myThread2.run();	// 메서드의 호출, 새로운 작업자 생성은 아니다.
-		
+		// myThread2.run(); // 메서드의 호출, 새로운 작업자 생성은 아니다.
+
 		// 새로운 작업자를 생성해서 위임 시킬 때는 Thread 안에 있는 start() 메서드를 호출해야 된다.
 		Thread thread1 = new Thread(myThread2);
 		thread1.start();
 		System.out.println("----- end main thread -----");
-		
-		
-	}// end of main
 
+	}// end of main
 
 }// end of class

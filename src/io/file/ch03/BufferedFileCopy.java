@@ -32,7 +32,7 @@ public class BufferedFileCopy {
 			while((data = bis.read()) != -1) {
 				bos.write(data);
 			}
-			
+			bos.flush(); // 매번 입출력을 발생하는 것이 아니라 한 번에 입출력을 사용
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

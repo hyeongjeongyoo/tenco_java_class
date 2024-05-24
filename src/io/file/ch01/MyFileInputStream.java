@@ -9,8 +9,8 @@ public class MyFileInputStream {
 	public static void main(String[] args) {
 
 		// 외부에 있는 파일 데이터를 읽으려면 input 이 필요
-		FileInputStream in = null;
 
+		FileInputStream in = null;
 		try {
 			in = new FileInputStream("a.txt");
 
@@ -38,6 +38,12 @@ public class MyFileInputStream {
 			e.printStackTrace();
 		}catch (IOException e) {
 			e.printStackTrace();
+		}finally {
+			try {
+				in.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 

@@ -5,6 +5,9 @@ import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
+import lombok.Getter;
+
+@Getter
 public class MyDataStream {
 
 	public static void main(String[] args) {
